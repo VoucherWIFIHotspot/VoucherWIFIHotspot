@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voucher Wifi Hotspot</title>
+    <link rel="icon" type="image/x-icon" href="D:\Wi-Fi Business\Logo Design\favicon.ico">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('D:/WIFI Business/Logo Design/LOGO.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        .button {
+            background-color: yellow;
+            color: #007bff;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .section {
+            padding: 40px 20px;
+            background-color: green;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+        #pricingDetails, #gcashQR, #howItWorks {
+            display: none;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+        img.qr, img.map, img.pricing, img.guide {
+            width: 100%;
+            height: auto;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+    </style>
+    <script>
+        function togglePricing() {
+            var pricing = document.getElementById("pricingDetails");
+            pricing.style.display = pricing.style.display === "none" ? "block" : "none";
+        }
+        function toggleQR() {
+            var qr = document.getElementById("gcashQR");
+            qr.style.display = qr.style.display === "none" ? "block" : "none";
+        }
+        function toggleHowItWorks() {
+            var howItWorks = document.getElementById("howItWorks");
+            howItWorks.style.display = howItWorks.style.display === "none" ? "block" : "none";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        Voucher Wifi Hotspot<br>
+        <small>Fast and Unlimited Internet</small>
+    </header>
+    <div class="container">
+        <div class="section">
+            <h2>About Us</h2>
+            <p>📶Providing Wifi Voucher Hotspot with Unlimited and Fast Internet Connection.</p>
+        </div>
+        <div class="section">
+            <h2>Plans & Pricing</h2>
+            <p>Choose from our flexible WiFi plans that fit your needs.</p>
+            <button class="button" onclick="togglePricing()">View Plans</button>
+            <div id="pricingDetails">
+                <ul>
+                    <li>₱5 - 1 Hour - 2 mbps</li>
+                    <li>₱29 - 1 Day - 5 mbps</li>
+                    <li>₱49 - 3 Days - 5 mbps</li>
+                    <li>₱79 - 5 Days - 5 mbps</li>
+                    <li>₱399 - 1 Month - 2 users</li>
+                </ul>
+                <img src="D:/WIFI Business/Logo Design/LocationMap2.jpg" alt="Pricing Plans" class="pricing">
+            </div>
+        </div>
+        <div class="section">
+            <h2>Coverage Area</h2>
+            <p>Our WIFI Hotspot can be accessed around 100 meters from our house near TESS KVOGUE TAILORING SHOP.</p>
+            <img src="D:/WIFI Business/Logo Design/LocationMap.jpg" alt="Coverage Area Map" class="map">
+        </div>
+        <div class="section">
+            <h2>How It Works</h2>
+            <p>☺️Easy and fast connection in just a few steps.</p>
+            <button class="button" onclick="toggleHowItWorks()">Step-by-Step Guide</button>
+            <div id="howItWorks">
+                <ol>
+                    <li>Pay the Plan you want to experience.</li>
+                    <li>Connect to VOUCHER WIFI HOTSPOT.</li>
+                    <li>Login the Voucher Code given by the internet provider.</li>
+                    <li>Connected and Enjoy Unlimited Internet.</li>
+                </ol>
+                <img src="D:/WIFI Business/How to connect/Step.jpg" alt="Step 1" class="guide">
+                <img src="D:/WIFI Business/How to connect/Step 1.jpg" alt="Step 1" class="guide">
+                <img src="D:/WIFI Business/How to connect/Step 2.jpg" alt="Step 2" class="guide">
+                <img src="D:/WIFI Business/How to connect/Step 3.jpg" alt="Step 3" class="guide">
+            </div>
+        </div>
+        <div class="section">
+            <h2>Online Payment</h2>
+            <p>Conveniently purchase your WiFi vouchers online using secure payment methods like GCash.</p>
+            <button class="button" onclick="toggleQR()">Pay with GCash</button>
+            <div id="gcashQR">
+                <img src="D:\WIFI Business\Logo Design\QR.jpg" alt="GCash QR Code" class="qr">
+                <p>Scan the QR code above to pay via GCash or Pay Cash at our Store Home Based.</p>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us for support and inquiries.</p>
+            <a href="https://www.facebook.com/profile.php?id=61573052642800" class="button" target="_blank">🥾Visit our Facebook Page and Private Message me for more inquiries💻📱📶</a>
+        </div>
+    </div>
+</body>
+</html>
